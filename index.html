@@ -7,20 +7,41 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main class="page">
-      <section class="hero">
-        <p class="eyebrow">UMKM Pekalongan</p>
-        <h1>Kopi Tan</h1>
-        <p>Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.</p>
-        <button id="promoButton" type="button">Lihat promo hari ini</button>
-      </section>
+  <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigasi utama">
+      <a class="brand" href="index.html">Kopi Nusa</a>
+      <ul>
+        <li><a aria-current="page" href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="konten" class="page">
+     <section class="hero" aria-labelledby="hero-title">
+  <p class="eyebrow">UMKM Pekalongan</p>
+  <h1 id="hero-title">Kopi Tan</h1>
+  <p>Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.</p>
+  <button id="promoButton" type="button">Lihat promo hari ini</button>
+  <img src="assets/images/etalase-kopi.svg" alt="Etalase Kopi Tan berisi kemasan kopi lokal" />
+</section>
 
       <section aria-labelledby="produk-title">
         <h2 id="produk-title">Produk Unggulan</h2>
-        <ul class="products">
-          <li>Kopi Tubruk Signature - Rp20.000</li>
-          <li>Cold Brew Aren - Rp25.000</li>
-        </ul>
+        <div class="product-list">
+  <article class="product-card">
+    <h3>Kopi Tubruk Signature</h3>
+    <p>Rasa klasik dengan aroma kuat untuk teman memulai hari.</p>
+    <p class="price">Rp20.000</p>
+  </article>
+  <article class="product-card">
+    <h3>Cold Brew Aren</h3>
+    <p>Minuman kopi dingin dengan manis aren yang seimbang.</p>
+    <p class="price">Rp28.000</p>
+  </article>
+</div>
       </section>
 
             <section aria-labelledby="jam-lokasi-title">
@@ -29,8 +50,8 @@
           <div>
             <h3>Jam Operasional</h3>
             <ul class="hours">
-              <li><span>Senin - Jumat</span><span>08.00 - 21.00</span></li>
-              <li><span>Sabtu - Minggu</span><span>09.00 - 22.00</span></li>
+              <li><span>Senin - Jumat</span><span>  08.00 - 21.00</span></li>
+              <li><span>Sabtu - Minggu</span><span>  09.00 - 22.00</span></li>
             </ul>
           </div>
           <div>
@@ -44,7 +65,22 @@
           </div>
         </div>
       </section>
+
+      <section id="kontak" aria-labelledby="kontak-title">
+        <h2 id="kontak-title">Kontak </h2>
+        <p><strong>Kota:</strong> Pekalongan, Jawa Tengah</p>
+        <p><strong>Jam Layanan:</strong> Selasa - jumat, 10.00 - 22.00 WIB</p>
+        <p>
+          <strong>WhatsApp:</strong>
+          <a href="https://wa.me/6282313441365">
+            Hubungi Kopi Tan Melalui WhatsApp
+          </a>
+        </p>
+      </section>
     </main>
+    <footer class="site-footer">
+  <p>&copy; 2026 Kopi . Data pada halaman ini bersifat dummy.</p>
+</footer>
     <script src="js/script.js"></script>
   </body>
 </html>
