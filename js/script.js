@@ -1,6 +1,10 @@
 const promoButton = document.querySelector("#promoButton");
+const defaultLabel = promoButton.textContent;
+const promoLabel = "Promo: Kopi Pagi Disc 15%!";
+let showingPromo = false;
 
 promoButton.addEventListener("click", () => {
-  promoButton.textContent = "Promo: Kopi Pagi Disc 15%!";
-  console.log("Promo Kopi Tan berhasil ditampilkan.");
+  showingPromo = !showingPromo;
+  promoButton.textContent = showingPromo ? promoLabel : defaultLabel;
+  console.log(showingPromo ? "Promo Kopi Tan ditampilkan." : "Promo Kopi Tan disembunyikan.");
 });
