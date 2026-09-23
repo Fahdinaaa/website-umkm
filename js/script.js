@@ -6,5 +6,6 @@ let showingPromo = false;
 promoButton.addEventListener("click", () => {
   showingPromo = !showingPromo;
   promoButton.textContent = showingPromo ? promoLabel : defaultLabel;
+  promoButton.setAttribute("aria-pressed", String(showingPromo));
   console.log(showingPromo ? "Promo Kopi Tan ditampilkan." : "Promo Kopi Tan disembunyikan.");
 });

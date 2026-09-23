@@ -10,12 +10,15 @@
   <a class="skip-link" href="#konten">Lewati ke konten utama</a>
   <header class="site-header">
     <nav class="nav" aria-label="Navigasi utama">
-      <a class="brand" href="index.html">Kopi Tan</a>
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/images/logo.jpeg" alt="Logo Kopi Tan" />
+      </a>
       <ul>
-       <li><a aria-current="page" href="index.html">Beranda</a></li>
-  <li><a href="tentang.html">Tentang Kami</a></li>
-  <li><a href="produk.html">Produk</a></li>
-  <li><a href="galeri.html">Galeri</a></li>
+        <li><a aria-current="page" href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
       </ul>
     </nav>
   </header>
@@ -23,10 +26,10 @@
   <main id="konten" class="page">
      <section class="hero" aria-labelledby="hero-title">
   <p class="eyebrow">UMKM Pekalongan</p>
-  <h1 id="hero-title">Kopi Tan</h1>
-  <p>Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.</p>
-  <button id="promoButton" type="button">Lihat promo hari ini</button>
+  <h1 id="hero-title" class="sr-only">Kopi Tan</h1>
   <img src="assets/images/etalase-kopi.jpg" alt="Etalase Kopi Tan berisi kemasan kopi lokal" />
+  <p>Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.</p>
+  <button id="promoButton" type="button" aria-pressed="false">Lihat promo hari ini</button>
 </section>
 
       <section aria-labelledby="produk-title">

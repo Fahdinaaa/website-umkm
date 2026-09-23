@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- PERBAIKAN: judul tab disamakan ke "Kopi Tan" (sebelumnya "Kopi Nusa") -->
     <title>Tentang Kopi Tan - Website UMKM</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -11,14 +10,15 @@
     <a class="skip-link" href="#konten">Lewati ke konten utama</a>
     <header class="site-header">
       <nav class="nav" aria-label="Navigasi utama">
-        <!-- PERBAIKAN: nama brand disamakan ke "Kopi Tan" (sebelumnya "Kopi Nusa") -->
-        <a class="brand" href="index.html">Kopi Tan</a>
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="assets/images/logo.jpeg" alt="Logo Kopi Tan" />
+        </a>
         <ul>
-        <!-- PERBAIKAN: aria-current dipindahkan dari link "Beranda" ke link "Tentang Kami" (halaman ini) -->
-        <li><a href="index.html">Beranda</a></li>
-  <li><a aria-current="page" href="tentang.html">Tentang Kami</a></li>
-  <li><a href="produk.html">Produk</a></li>
-  <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a aria-current="page" href="tentang.html">Tentang Kami</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
         </ul>
       </nav>
     </header>
@@ -31,10 +31,19 @@
       </section>
       <section aria-labelledby="nilai-title">
         <h2 id="nilai-title">Nilai yang Kami Bawa</h2>
-        <ul>
-          <li>Bahan lokal dari petani sekitar.</li>
-          <li>Proses sederhana dan transparan.</li>
-          <li>Pelayanan ramah untuk pelanggan harian.</li>
+        <ul class="values-grid">
+          <li>
+            <span class="value-number" aria-hidden="true">1</span>
+            <p>Bahan lokal dari petani sekitar.</p>
+          </li>
+          <li>
+            <span class="value-number" aria-hidden="true">2</span>
+            <p>Proses sederhana dan transparan.</p>
+          </li>
+          <li>
+            <span class="value-number" aria-hidden="true">3</span>
+            <p>Pelayanan ramah untuk pelanggan harian.</p>
+          </li>
         </ul>
       </section>
     </main>
