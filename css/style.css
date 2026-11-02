@@ -585,6 +585,11 @@ fieldset label {
   color: var(--color-primary-strong);
 }
 
+#produk-unggulan {
+  font-weight: 700;
+  color: var(--color-primary-strong);
+}
+
 .featured-badge {
   display: inline-block;
   margin-block-end: var(--space-2);
