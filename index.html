@@ -12,7 +12,7 @@
   <header class="site-header">
     <nav class="nav" aria-label="Navigasi utama">
       <a class="brand" href="index.html">
-        <img class="brand-logo" src="assets/images/logo.jpeg" width="1280" height="698" alt="Logo Kopi Tan" />
+        <img class="brand-logo" src="assets/images/logo.jpg" width="1734" height="592" alt="Logo Kopi Tan" />
       </a>
       <ul>
         <li><a aria-current="page" href="index.html">Beranda</a></li>
@@ -24,17 +24,39 @@
     </nav>
   </header>
 
-  <main id="konten" class="page">
-      <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-content">
-        <p class="eyebrow">UMKM Pekalongan</p>
-        <h1 id="hero-title" class="sr-only">Kopi Tan</h1>
-        <p>Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.</p>
-        <button id="promoButton" type="button" aria-pressed="false">Lihat promo hari ini</button>
-      </div>
-      <img class="hero-image" src="assets/images/etalase-kopi.jpg" width="5733" height="3822" alt="Etalase Kopi Tan berisi kemasan kopi lokal" />
-    </section>
+  <main id="konten">
+      <section class="hero hero--home" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <p class="eyebrow">Kopi Tan &middot; UMKM Pekalongan</p>
+            <h1 id="hero-title">Kopi lokal pilihan <em>untuk teman harimu.</em></h1>
+            <p class="hero-lead">
+              Teman belajar, bekerja, dan berdiskusi. Diseduh dari biji kopi lokal
+              dan disajikan segar setiap hari.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="produk.html">Lihat Produk</a>
+              <button id="promoButton" class="button--outline" type="button" aria-pressed="false">Lihat promo hari ini</button>
+            </div>
+            <dl class="hero-meta">
+              <div>
+                <dt>Lokasi</dt>
+                <dd>Pekalongan</dd>
+              </div>
+              <div>
+                <dt>Senin - Jumat</dt>
+                <dd>08.00 - 21.00</dd>
+              </div>
+              <div>
+                <dt>Menu</dt>
+                <dd>6 kopi, 5 aksesori</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
 
+      <div class="page">
       <section aria-labelledby="produk-title">
         <h2 id="produk-title">Produk Unggulan</h2>
         <div class="product-list">
@@ -82,6 +104,7 @@
           </div>
         </div>
       </section>
+      </div>
     </main>
     <footer class="site-footer">
   <p>&copy; 2026 Kopi Tan . Data pada halaman ini bersifat dummy.</p>

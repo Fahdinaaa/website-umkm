@@ -13,7 +13,7 @@
     <header class="site-header">
       <nav class="nav" aria-label="Navigasi utama">
         <a class="brand" href="index.html">
-          <img class="brand-logo" src="assets/images/logo.jpeg" width="1280" height="698" alt="Logo Kopi Tan" />
+          <img class="brand-logo" src="assets/images/logo.jpg" width="1734" height="592" alt="Logo Kopi Tan" />
         </a>
         <ul>
           <li><a href="index.html">Beranda</a></li>
@@ -25,79 +25,108 @@
       </nav>
     </header>
     <main id="konten" class="page">
-      <div class="contact-intro">
-        <h1>Kontak Kopi Tan</h1>
+      <section class="intro contact-intro" aria-labelledby="kontak-title">
+        <p class="eyebrow">Hubungi Kami</p>
+        <h1 id="kontak-title">Ada yang ingin ditanyakan? <em>Kami siap membantu.</em></h1>
         <p>Silakan kirim pertanyaan tentang produk, pesanan, atau kerja sama.</p>
-      </div>
+        <div class="hero-actions">
+          <a class="button" href="https://wa.me/6282313441365">Chat WhatsApp</a>
+          <a class="button button--outline" href="produk.html">Lihat Produk</a>
+        </div>
+      </section>
 
       <div class="contact-layout">
-        <form id="form-kontak" action="#" method="post">
-          <div class="field">
-            <label for="nama">Nama lengkap</label>
-            <input id="nama" name="nama" type="text" autocomplete="name" required minlength="3" />
+        <form id="form-kontak" action="#" method="post" aria-labelledby="form-title">
+          <h2 id="form-title">Kirim Pesan</h2>
+          <p class="field-help">Semua kolom wajib diisi.</p>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="nama">Nama lengkap</label>
+              <input id="nama" name="nama" type="text" autocomplete="name" required minlength="3" />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+
+            <div class="field">
+              <label for="paket">Paket yang diminati</label>
+              <select id="paket" name="paket" required>
+                <option value="">Pilih paket</option>
+                <option value="rumahan">Paket rumahan</option>
+                <option value="kantor">Paket kantor</option>
+                <option value="reseller">Paket reseller</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="whatsapp">Nomor WhatsApp</label>
+              <input
+                id="whatsapp"
+                name="whatsapp"
+                type="tel"
+                inputmode="numeric"
+                pattern="[0-9+ ]{8,15}"
+                autocomplete="tel"
+                required
+                aria-describedby="whatsapp-help"
+              />
+              <p id="whatsapp-help" class="field-help">Contoh: 6281234567890 (kode negara, tanpa spasi).</p>
+            </div>
           </div>
 
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required />
-          </div>
-          <div class="field">
-            <label for="paket">Paket yang diminati</label>
-            <select id="paket" name="paket" required>
-              <option value="">Pilih paket</option>
-              <option value="rumahan">Paket rumahan</option>
-              <option value="kantor">Paket kantor</option>
-              <option value="reseller">Paket reseller</option>
-            </select>
-          </div>
           <fieldset>
             <legend>Topik pertanyaan</legend>
-            <label><input type="radio" name="topik" value="produk" required /> Informasi produk</label>
-            <label><input type="radio" name="topik" value="pesanan" /> Status pesanan</label>
-            <label><input type="radio" name="topik" value="kerja-sama" /> Kerja sama</label>
+            <div class="choice-group">
+              <label class="choice"><input type="radio" name="topik" value="produk" required /> Informasi produk</label>
+              <label class="choice"><input type="radio" name="topik" value="pesanan" /> Status pesanan</label>
+              <label class="choice"><input type="radio" name="topik" value="kerja-sama" /> Kerja sama</label>
+            </div>
           </fieldset>
-          <div class="field">
-            <label for="whatsapp">Nomor WhatsApp</label>
-            <input
-              id="whatsapp"
-              name="whatsapp"
-              type="tel"
-              inputmode="numeric"
-              pattern="[0-9+ ]{8,15}"
-              autocomplete="tel"
-              required
-              aria-describedby="whatsapp-help"
-            />
-            <p id="whatsapp-help" class="field-help">Contoh: 6281234567890 (kode negara, tanpa spasi).</p>
-          </div>
+
           <fieldset>
             <legend>Waktu kontak yang disukai</legend>
-            <label><input type="radio" name="waktu-kontak" value="pagi" required /> Pagi (08.00-11.00)</label>
-            <label><input type="radio" name="waktu-kontak" value="siang" /> Siang (11.00-15.00)</label>
-            <label><input type="radio" name="waktu-kontak" value="sore" /> Sore (15.00-18.00)</label>
+            <div class="choice-group">
+              <label class="choice"><input type="radio" name="waktu-kontak" value="pagi" required /> Pagi (08.00-11.00)</label>
+              <label class="choice"><input type="radio" name="waktu-kontak" value="siang" /> Siang (11.00-15.00)</label>
+              <label class="choice"><input type="radio" name="waktu-kontak" value="sore" /> Sore (15.00-18.00)</label>
+            </div>
           </fieldset>
+
           <div class="field">
             <label for="pesan">Pesan</label>
             <textarea id="pesan" name="pesan" rows="5" required minlength="10"></textarea>
           </div>
+
           <div class="form-actions">
             <button type="submit">Tampilkan Preview</button>
             <a href="index.html">Kembali ke beranda</a>
           </div>
         </form>
+
         <aside class="contact-info" aria-labelledby="info-title">
           <h2 id="info-title">Info Kontak</h2>
+
+          <h3>WhatsApp</h3>
+          <p>Balasan paling cepat lewat chat.</p>
+          <p><a class="button" href="https://wa.me/6282313441365">Hubungi Kopi Tan Melalui WhatsApp</a></p>
+
           <h3>Jam Operasional</h3>
           <ul class="hours">
             <li><span>Senin - Jumat</span><span>08.00 - 21.00</span></li>
             <li><span>Sabtu - Minggu</span><span>09.00 - 22.00</span></li>
           </ul>
+
           <h3>Lokasi</h3>
-          <address>Jl. HOS Cokroaminoto No. 12, Pekalongan, Jawa Tengah</address>
-          <h3>WhatsApp</h3>
-          <p><a href="https://wa.me/6282313441365">Hubungi Kopi Tan Melalui WhatsApp</a></p>
+          <address>
+            Jl. HOS Cokroaminoto No. 12, Pekalongan, Jawa Tengah<br />
+            <a href="https://maps.google.com/?q=Kopi+Tan+Pekalongan" target="_blank" rel="noopener">Lihat di Google Maps</a>
+          </address>
         </aside>
       </div>
+
       <section class="preview-section" aria-labelledby="preview-title">
         <h2 id="preview-title">Preview Data</h2>
         <pre id="preview-form" aria-live="polite">Data form akan muncul setelah tombol dikirim.</pre>

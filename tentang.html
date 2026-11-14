@@ -12,7 +12,7 @@
     <header class="site-header">
       <nav class="nav" aria-label="Navigasi utama">
         <a class="brand" href="index.html">
-          <img class="brand-logo" src="assets/images/logo.jpeg" width="1280" height="698" alt="Logo Kopi Tan" />
+          <img class="brand-logo" src="assets/images/logo.jpg" width="1734" height="592" alt="Logo Kopi Tan" />
         </a>
         <ul>
           <li><a href="index.html">Beranda</a></li>
@@ -24,13 +24,82 @@
       </nav>
     </header>
     <main id="konten" class="page">
-      <section aria-labelledby="tentang-title">
-        <p class="eyebrow">Cerita Usaha</p>
-        <h1 id="tentang-title">Tentang Kopi Tan </h1>
-        <p>Kopi Tan adalah UMKM fiktif yang mengolah kopi lokal untuk kebutuhan pembelajaran.</p>
-        <img src="assets/images/etalase-kopi.jpg" width="5733" height="3822" loading="lazy" alt="Suasana meja kafe Kopi Tan dengan cold brew, cangkir latte, dan dekorasi bunga kering" />
+
+      <section class="intro" aria-labelledby="tentang-title">
+        <p class="eyebrow">Tentang Kami</p>
+        <h1 id="tentang-title">Dari satu meja kecil, <em>untuk kopi lokal.</em></h1>
+        <p>
+          Kopi Tan adalah UMKM fiktif yang mengolah kopi lokal untuk kebutuhan
+          pembelajaran. Idenya sederhana: kopi enak, harga ramah, dan proses yang jujur.
+        </p>
+        <nav class="subnav" aria-label="Bagian halaman ini">
+          <a href="#cerita">Cerita Kami</a>
+          <a href="#bahan">Sumber Bahan</a>
+          <a href="#nilai">Nilai Kami</a>
+          <a href="#tim">Tim</a>
+        </nav>
       </section>
-      <section aria-labelledby="nilai-title">
+
+      <section aria-label="Suasana toko Kopi Tan">
+        <figure class="media-card media-card--wide">
+          <img src="assets/images/keadaan.jpg" width="1376" height="768" alt="Ilustrasi suasana toko Kopi Tan: barista melayani pelanggan di meja kasir, rak berisi toples biji kopi, mug, dan gift box, serta pengunjung yang duduk di dekat jendela" />
+          <figcaption>Suasana toko Kopi Tan: kopi, aksesori, dan obrolan hangat di satu tempat.</figcaption>
+        </figure>
+      </section>
+
+      <section id="cerita" aria-labelledby="cerita-title">
+        <div class="split">
+          <img class="hero-image hero-image--crop" src="assets/images/etalase-kopi.jpg" width="5733" height="3822" loading="lazy" alt="Suasana meja kafe Kopi Tan dengan cold brew, cangkir latte, dan dekorasi bunga kering" />
+          <div>
+            <h2 id="cerita-title">Dari meja kecil menjadi tempat favorit harian.</h2>
+            <p>
+              Kopi Tan dimulai dari meja kecil dengan satu mesin seduh dan beberapa
+              resep andalan. Kami ingin kopi lokal terasa dekat: mudah dipesan,
+              terjangkau, dan selalu disajikan dengan ramah.
+            </p>
+            <p>Dari sana, daftar menu bertambah, tetapi prinsip kami tetap sama di setiap cangkir.</p>
+          </div>
+        </div>
+        <dl class="stats-grid">
+          <div>
+            <dt>Berdiri sejak</dt>
+            <dd>2024</dd>
+          </div>
+          <div>
+            <dt>Menu andalan</dt>
+            <dd>12</dd>
+          </div>
+          <div>
+            <dt>Petani mitra</dt>
+            <dd>5</dd>
+          </div>
+          <div>
+            <dt>Pelanggan harian</dt>
+            <dd>100+</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="bahan" aria-labelledby="bahan-title">
+        <div class="split split--reverse">
+          <div>
+            <h2 id="bahan-title">Biji kopi dan bahan asli dari petani sekitar.</h2>
+            <p>
+              Kami memilih biji kopi dari kebun lokal dan bekerja sama langsung
+              dengan petani, sehingga rasa lebih autentik dan hasilnya kembali ke
+              orang-orang yang menanamnya.
+            </p>
+            <p>Proses sederhana dan transparan: dari biji, sangrai, seduh, sampai ke tangan pelanggan.</p>
+          </div>
+          <ol class="process-list">
+            <li><span class="value-number" aria-hidden="true">1</span> Petik dan pilih biji</li>
+            <li><span class="value-number" aria-hidden="true">2</span> Sangrai kecil-kecilan</li>
+            <li><span class="value-number" aria-hidden="true">3</span> Seduh saat dipesan</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="nilai" aria-labelledby="nilai-title">
         <h2 id="nilai-title">Nilai yang Kami Bawa</h2>
         <ul class="values-grid">
           <li>
@@ -47,6 +116,41 @@
           </li>
         </ul>
       </section>
+
+      <section id="tim" aria-labelledby="tim-title">
+        <h2 id="tim-title">Orang di Balik Kopi Tan</h2>
+        <ul class="team-grid">
+          <li>
+            <span class="avatar" aria-hidden="true">AT</span>
+            <h3>Fahdina</h3>
+            <p class="category-tag">Pendiri · Peracik Kopi</p>
+            <p>Merancang resep dan memilih biji kopi untuk setiap menu.</p>
+          </li>
+          <li>
+            <span class="avatar" aria-hidden="true">BS</span>
+            <h3>Labib</h3>
+            <p class="category-tag">Operasional</p>
+            <p>Mengatur pasokan bahan dan menjaga proses tetap rapi.</p>
+          </li>
+          <li>
+            <span class="avatar" aria-hidden="true">CP</span>
+            <h3>Citra</h3>
+            <p class="category-tag">Pelayanan Pelanggan</p>
+            <p>Memastikan setiap pelanggan pulang dengan senyum.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-label="Kutipan pendiri">
+        <figure class="pull-quote">
+          <blockquote>
+            <p>Kopi lokal layak disajikan dengan bangga, satu cangkir untuk satu cerita.</p>
+          </blockquote>
+          <figcaption>Fahdina · Pendiri Kopi Tan</figcaption>
+        </figure>
+        <p><a class="button" href="produk.html">Lihat Produk Kami</a></p>
+      </section>
+
     </main>
     <footer class="site-footer">
       <p>&copy; 2026 Kopi Tan. Data pada halaman ini bersifat dummy.</p>

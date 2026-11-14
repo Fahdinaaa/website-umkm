@@ -9,6 +9,11 @@ const produkUmkm = [
   { nama: "Salted Caramel Latte", kategori: "Creamy", harga: 32000, stok: 0, unggulan: false },
   { nama: "Dirty Latte", kategori: "Creamy", harga: 40000, stok: 9, unggulan: false },
   { nama: "Butterscotch Latte", kategori: "Creamy", harga: 28000, stok: 3, unggulan: false },
+  { nama: "Tumbler Kopi Tan", kategori: "Aksesori", harga: 85000, stok: 15, unggulan: false },
+  { nama: "Mug Keramik", kategori: "Aksesori", harga: 55000, stok: 8, unggulan: false },
+  { nama: "Tote Bag Kanvas", kategori: "Aksesori", harga: 45000, stok: 20, unggulan: false },
+  { nama: "Apron Barista", kategori: "Aksesori", harga: 120000, stok: 2, unggulan: false },
+  { nama: "Gift Box Kopi Tan", kategori: "Aksesori", harga: 150000, stok: 6, unggulan: false },
 ];
 
 function formatRupiah(nilai) {
@@ -41,6 +46,8 @@ function labelKategori(kategori) {
       return "Seduh manual";
     case "Creamy":
       return "Kopi susu";
+    case "Aksesori":
+      return "Aksesori & merchandise";
     default:
       return "Produk UMKM";
   }
