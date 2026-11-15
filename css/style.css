@@ -1134,3 +1134,54 @@ fieldset .choice:has(input:focus-visible) {
     grid-row: span 2;
   }
 }
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-block: var(--space-3) var(--space-4);
+}
+
+.filter-button {
+  color: var(--color-primary);
+  background: transparent;
+  border: var(--border-line);
+}
+
+.filter-button:hover {
+  color: var(--color-primary);
+  background: var(--color-accent);
+}
+
+.filter-button:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.filter-button.is-active {
+  color: var(--color-brand);
+  background: var(--color-primary);
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: var(--space-4);
+  color: var(--color-muted);
+  background: var(--color-surface-soft);
+  border: 2px dashed var(--color-primary);
+  border-radius: var(--radius-md);
+}
+
+.ghost-button {
+  display: block;
+  margin-block-start: var(--space-3);
+  color: var(--color-primary);
+  background: transparent;
+  border: var(--border-line);
+}
+
+.ghost-button:hover {
+  color: var(--color-primary);
+  background: var(--color-accent);
+}
